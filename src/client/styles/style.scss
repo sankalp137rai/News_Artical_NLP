@@ -1,0 +1,116 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: orchid;
+    min-height: 100vh;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
+h2,p{
+    margin-bottom: 1rem;
+}
+
+#app{
+    width: 40%;
+    max-width: 1200px;
+    background: #96bb7c;
+    border-radius: 5px;
+}
+
+header{
+    font-size: 1.5rem;
+    padding-top: 20px;
+    text-align: center;
+}
+
+main{
+    padding: 40px;
+}
+.url-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.url-container{
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.url-container label{
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.url-container input{
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    background: #c7c7c7;
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.submit-button{
+    width: 15%;
+    align-self: center;
+    background: #FFCD41;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    transform: scale(1.025);
+    background: #d4aa36;
+}
+
+
+#output{
+    border: 2px solid #222;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#output ul{
+    list-style: none;
+    padding: 10px;
+    background: #eaeaea;
+}
+
+.disabled{
+    display: none;
+}
+
+footer{
+    border-top: 2px solid #eee;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    margin: 0;
+}
+
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>News Article NLP</title>
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>News Article NLP</h1>
+      </header>
+
+      <main>
+        <h2>Here we are using AYLIEN API for NPL</h2>
+        <p>
+          The AYLIEN Text Analysis API allows you to extract value from a wide range of documents and publications with ease.How it works: The API leverages the power of natural language processing to mine meaning and insights from documents. It performs document-level, aspect-based, and entity-level sentiment analysis for understanding human-produced textual content.
+        </p>
+
+        <form class="url-form" onsubmit="return Client.urlRequest(event)">
+          <div class="url-container">
+            <label for="url">Enter Article Url to analyse :</label>
+            <input required id="url" type="url" placeholder="Enter a valid URL starting with http or https" />
+          </div>
+          <input class="submit-button" type="submit" value="Submit" />
+        </form>
+
+        <section id="output" class="disabled">
+          <ul>
+            <li>
+              <h3>Subjectivity:</h3>
+              <p id="subjectivity"></p>
+              <h3>Subjectivity Confidence:</h3>
+              <p id="subjectivity_confidence"></p>
+            </li>
+            <li>
+              <h3>Polarity:</h3>
+              <p id="polarity"></p>
+              <h3>Polarity Confidence:</h3>
+              <p id="polarity_confidence"></p>
+            </li>
+
+            <li>
+              <h3>Article text:</h3>
+              <p id="article_text"></p>
+            </li>
+          </ul>
+        </section>
+      </main>
+
+      <footer>
+        <p>&copy Sankalp Rai</p>
+      </footer>
+    </div>
+    <script>
+      //checking if serviceworker is supported by browser
+      if ("serviceWorker" in navigator) {
+          // adding service worker on window load
+          window.addEventListener("load", () =>{
+              navigator.serviceWorker.register("/service-worker.js")
+              console.log("service worker setup is completed!")
+          });
+      }
+    </script>
+  </body>
+</html>
