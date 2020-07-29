@@ -18,4 +18,4 @@ This project uses:
 	 2. **webpack.prod.js** To build project for deployment. To start `npm start` or to build project in production environment `npm run build-prod`
  3. **express js** : To setup the server using `/src/server/index.js`
  4. **Aylien TextAPI** : To fetch nlp response from url used in `/src/server/index.js`
- 5. **Jest** : For testing the project javascript files. To start test `npm run test`
+ 5. **Test** : For testing the project javascript files. To start test `npm run test`
